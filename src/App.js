@@ -13,7 +13,7 @@ function App() {
   // arreglo de citas
   const [citas, guardarCitas] = useState(citasIniciales);
 
-  // useEffect funcino que se ejecuta al detectarse un cambio en el state dependiente
+  // useEffect funcion que se ejecuta al detectarse un cambio en el state dependiente
   // siempre pasarle un arreglo vacío para que se ejecute al menos una vez.
   useEffect( () => {
       let citasIniciales = JSON.parse(localStorage.getItem('citas'));
