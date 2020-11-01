@@ -42,7 +42,7 @@ const Formulario = ({crearCita}) => {
         // eliminar mensaje previo
         actualizarError(false);
 
-        // asignar un if
+        // asignar un id
         cita.id = uuid();
 
         // crear la cita
@@ -58,7 +58,7 @@ const Formulario = ({crearCita}) => {
         });
     }
 
-    return ( 
+    return (
         <Fragment>
             <h2>Crear Cita</h2>
 
@@ -67,7 +67,7 @@ const Formulario = ({crearCita}) => {
                 : null
             }
 
-            <form 
+            <form
                 onSubmit={submitCita}
             >
 
